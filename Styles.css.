@@ -24,17 +24,9 @@ header {
     text-align: center; 
 
 } 
-
- 
-
 header h1 { 
 
     margin: 0; 
-
-} 
-
- 
-
 nav a { 
 
     color: white; 
@@ -44,13 +36,9 @@ nav a {
     margin: 0 10px; 
 
 } 
-
- 
-
 nav a:hover { 
 
     text-decoration: underline; 
-
 } 
 main { 
 
@@ -59,9 +47,17 @@ main {
     max-width: 800px; 
 
     margin: 0 auto; 
-  
+  }
+main img { 
 
-}
+    max-width: 100%; 
+
+    height: auto; 
+
+    display: block; 
+
+    margin: 20px 0; 
+} 
 footer { 
 
     background-color: #333; 
@@ -116,3 +112,4 @@ main a[href^="mailto:"] {
     font-weight: bold; 
 
 } 
+    
