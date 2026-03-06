@@ -115,4 +115,31 @@ main a[href^="mailto:"] {
     font-weight: bold; 
 
 } 
+main h2 {
+    color: #ff4d4d;                    /* red heading */
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    margin: 40px 0 20px;
+}
+
+main figure {
+    transition: transform 0.3s;
+}
+
+main figure:hover {
+    transform: scale(1.08);
+}
+
+main figcaption {
+    color: #ffd700;                    /* gold */
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 8px 0 5px;
+}
+
+main figure p {
+    color: #e0e0e0;
+    margin: 0;
+    font-size: 1.1em;
+}
     
