@@ -7,6 +7,10 @@ body {
     line-height: 1.6;
     background-image: 
         radial-gradient(circle at 50% 50%, rgba(20,20,20,0.9), #0a0a0a 70%);  /* subtle vignette like theater lighting */
+    background: url(https://thumbs.dreamstime.com/b/red-carpet-entrance-gold-stanchions-velvet-curtains-award-ceremony-premiere-luxury-ev-glamorous-awaits-rich-create-378830181.jpg) no-repeat center center fixed;  /* upload your chosen image */
+    background-size: cover;
+    background-color: #0a0a0a;  /* fallback dark color if image fails */
+
 }
 header {
     background: linear-gradient(to bottom, #1a0000, #000000);  /* deep red-black fade */
