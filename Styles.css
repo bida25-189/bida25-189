@@ -1,19 +1,13 @@
-body { 
-
-    font-family: Arial, sans-serif; 
-
-    
-    background-color: #0f172a;          /* slate dark */
-    
-    color: #e2e8f0;
-
-    margin: 0; 
-
-    padding: 0; 
-
-    line-height: 1.6; 
-
-} 
+body {
+    font-family: 'Cinzel', 'Georgia', serif;   /* elegant, slightly theatrical font */
+    color: #e0e0e0;                            /* light gray-white for readability */
+    background-color: #0a0a0a;                 /* very dark gray-black (not pure #000) */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(20,20,20,0.9), #0a0a0a 70%);  /* subtle vignette like theater lighting */
+}
 header { 
 
     background-color: #dc2626;          /* cherry red */
