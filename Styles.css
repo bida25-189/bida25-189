@@ -120,11 +120,7 @@ main figure p {
     color: #e0e0e0;
     margin: 0;
     font-size: 1.1em;
-}
-/* Container for the collage/collection */
-.image-collage {
-    column-count: 3;                /* 3 columns on desktop – adjust to 2 or 1 on mobile */
-    column-gap: 20px;               /* space between columns */
+
     margin: 40px auto;              /* center and space from other content */
     max-width: 1200px;              /* limit width so it doesn't stretch too wide */
 }
