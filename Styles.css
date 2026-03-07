@@ -128,8 +128,3 @@ main figure p {
     margin: 40px auto;              /* center and space from other content */
     max-width: 1200px;              /* limit width so it doesn't stretch too wide */
 }
-
-@media (max-width: 600px) {
-    .image-collage {
-        column-count: 1;
-    }
