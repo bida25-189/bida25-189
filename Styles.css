@@ -69,15 +69,8 @@ img {
     transition: all 0.5s;
 }
 
-img:hover {
-    transform: scale(1.05);
-    box-shadow: 
-        0 25px 60px rgba(0,0,0,1),
-        0 0 50px rgba(255,215,0,0.7);
-}
-
 a {
-    color: #ff4d4d;
+    color: #ffd700;
     text-decoration: none;
     font-weight: bold;
 }
@@ -92,7 +85,7 @@ footer {
     color: #a0a0a0;
     text-align: center;
     padding: 25px;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
     border-top: 4px solid #b8860b;
