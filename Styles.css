@@ -121,3 +121,47 @@ main figure p {
     margin: 0;
     font-size: 1.1em;
 }
+/* Container for the collage/collection */
+.image-collage {
+    column-count: 3;                /* 3 columns on desktop – adjust to 2 or 1 on mobile */
+    column-gap: 20px;               /* space between columns */
+    margin: 40px auto;              /* center and space from other content */
+    max-width: 1200px;              /* limit width so it doesn't stretch too wide */
+}
+
+/* Make images fill columns nicely + keep your poster style */
+.image-collage img {
+    width: 100%;                    /* fill column width */
+    height: auto;
+    display: block;
+    margin-bottom: 20px;            /* vertical spacing between images in column */
+    
+    /* Keep your gold frame + glow effect */
+    border: 10px solid #b8860b;
+    border-radius: 8px;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.9),
+        0 0 30px rgba(255,215,0,0.4);
+    transition: all 0.5s;
+}
+
+/* Hover effect – works great on collage */
+.image-collage img:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,1),
+        0 0 50px rgba(255,215,0,0.7);
+}
+
+/* Responsive – fewer columns on smaller screens */
+@media (max-width: 900px) {
+    .image-collage {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-collage {
+        column-count: 1;
+    }
+}
