@@ -188,3 +188,30 @@ a:hover {
         <!-- more figures... -->
     </div>
 </main>
+<!-- On home page or about page -->
+<section class="gallery-section">   <!-- or wherever your images live -->
+    <h2>Movies We Love</h2>
+    
+    <div class="poster-collage">
+        <figure>
+            <img src="images/poster-inception.jpg" alt="Inception poster">
+            <figcaption>Inception</figcaption>
+            <p>2010 • Sci-Fi Thriller</p>
+        </figure>
+
+        <figure>
+            <img src="images/poster-dune.jpg" alt="Dune poster">
+            <figcaption>Dune: Part Two</figcaption>
+            <p>2024 • Epic Sci-Fi</p>
+        </figure>
+
+        <figure>
+            <img src="images/poster-blade-runner.jpg" alt="Blade Runner 2049">
+            <figcaption>Blade Runner 2049</figcaption>
+            <p>2017 • Neo-Noir</p>
+        </figure>
+
+        <!-- add as many as you want -->
+    </div>
+</section>
+
