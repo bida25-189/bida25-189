@@ -51,55 +51,23 @@ main {
     border-radius: 12px;
     box-shadow: inset 0 0 80px rgba(0,0,0,0.95);
 }
-.poster-collage {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 80px 40px;               /* large gap → allows overlap via transform */
-    padding: 40px 20px 80px;
-    perspective: 1300px;           /* creates 3D space for rotations */
-    position: relative;
-}
-
-.poster-collage figure {
-    position: relative;
-    margin: 0;
-    transform-style: preserve-3d;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); /* smooth bouncy feel */
-}
-
-/* Random-ish cinematic tilts for collage feel — adjust degrees if too strong/weak */
-.poster-collage figure:nth-child(4n+1) { transform: rotate(-6deg) translateY(20px) translateX(-25px) scale(0.96); }
-.poster-collage figure:nth-child(4n+2) { transform: rotate(5deg)  translateY(35px) translateX(20px)  scale(0.98); }
-.poster-collage figure:nth-child(4n+3) { transform: rotate(-3deg) translateY(15px) translateX(10px)  scale(1.02); }
-.poster-collage figure:nth-child(4n+4) { transform: rotate(4deg)  translateY(28px) translateX(-15px) scale(0.97); }
-
-.poster-collage figure:hover {
-    transform: rotate(0deg) translateY(0) translateX(0) scale(1.15) !important;
-    z-index: 10;
-    box-shadow:
-        0 35px 90px rgba(0,0,0,0.95),
-        0 0 70px rgba(255,215,0,0.6),
-        inset 0 0 45px rgba(184,134,11,0.35);
-}
-
 img,
 main img {
-    max-width: 100%;               /* Your new: ensures fit */
+    max-width: 100%;               
     height: auto;
     display: block;
-    margin: 35px auto;             /* Your new: centered with more margin */
-    border: 10px solid #b8860b;    /* Your new: thicker gold frame like a movie poster */
-    border-radius: 8px;            /* Your new: slightly larger radius */
+    margin: 35px auto;             
+    border: 10px solid #b8860b;    
+    border-radius: 8px;            
     box-shadow:
-        0 15px 40px rgba(0,0,0,0.9), /* Your new: stronger base shadow */
-        0 0 30px rgba(255,215,0,0.4); /* Your new: golden glow */
+        0 15px 40px rgba(0,0,0,0.9), 
+        0 0 30px rgba(255,215,0,0.4); 
     background: #0f0f0f;
-    transition: all 0.5s;          /* Your new: longer transition for all properties */
+    transition: all 0.5s;          
 }
 
 img:hover,
 main img:hover {
-    /* overridden by figure:hover — but kept your original for reference/fallback */
     transform: scale(1.04);
     box-shadow:
         0 20px 50px rgba(0,0,0,1),
